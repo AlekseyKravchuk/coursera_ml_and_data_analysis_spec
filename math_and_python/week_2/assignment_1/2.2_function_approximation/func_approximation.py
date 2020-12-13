@@ -10,7 +10,6 @@ from scipy import linalg
 def get_vector_b(points_tup):
     def f(x):
         return sin(x / 5) * exp(x / 10) + 5 * exp(-x / 2)
-
     # return np.array([f(x) for x in points_tup])
     return np.array([f(x) for x in points_tup])[:, np.newaxis]
 
